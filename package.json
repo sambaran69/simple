@@ -1,0 +1,31 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "Simple Typescript Project template with eslint and prettier",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "build:watch": "rimraf ./dist && tsc --watch",
+    "start": "npm run build && node dist/index.js",
+    "lint": "eslint ./src **/*.ts",
+    "lint:fix": "eslint ./src **/*.ts --fix",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/node": "^22.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  }
+}
